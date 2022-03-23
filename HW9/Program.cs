@@ -1,0 +1,17 @@
+﻿using HW9Library;
+Car car1 = new Car();
+Car car2 = new Car();
+Car car3 = new Car();
+Boat boat1 = new Boat();
+Boat boat2 = new Boat();
+Boat boat3 = new Boat();
+MyCollection<IMovable> collection = new MyCollection<IMovable>();
+collection.Add(car1);
+collection.Add(car2);
+collection.Add(car3);
+collection.Add(boat1);
+collection.Add(boat2);
+collection.Add(boat3);
+int totalAmount = collection.amount;
+Console.WriteLine(totalAmount);
+var temp = collection.GetValue(2);
